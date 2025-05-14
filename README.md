@@ -2,7 +2,9 @@
     <h1>PizzaShop Web</h1>
 </div>
 
-Este é um projeto desenvolvido durante o curso Ignite da Rocketseat, com o objetivo de criar uma aplicação web para gerenciar pedidos de uma pizzaria. O projeto foi construído utilizando Vite, React e TypeScript, e serviu como uma oportunidade para aprender e aplicar conceitos avançados de desenvolvimento frontend, gerenciamento de estados, navegação, controle de formulários e validação de dados.
+Este é um projeto desenvolvido durante o curso da Rocketseat, com o objetivo de criar uma aplicação web para gerenciar pedidos de uma pizzaria com integração a API. O projeto foi construído utilizando Vite, React e TypeScript, e serviu como uma oportunidade para aprender e aplicar conceitos avançados de desenvolvimento frontend, gerenciamento de estados, navegação, controle de formulários e validação de dados.
+
+A API para integração foi utilizada do repositório: <a>https://github.com/rocketseat-education/pizzashop-api</a>
 
 ## Tecnologias Utilizadas
 
