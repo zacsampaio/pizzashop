@@ -50,12 +50,12 @@ Durante o desenvolvimento deste projeto, foi possível aprimorar:
    git clone https://github.com/zacsampaio/pizzashop
 
 2. Navegue até a pasta do projeto e instale as dependências:
-   ```bash
-    cd pizzashop-web && pnpm install
+    ```bash
+     cd pizzashop-web && pnpm install
 
 3. Inicie o servidor de desenvolvimento:
-   ```bash
-    pnpm dev
+    ```bash
+     pnpm dev
 
 4. Acesse a aplicação no navegador através do endereço exibido no terminal.
 
