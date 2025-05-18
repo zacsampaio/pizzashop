@@ -2,6 +2,7 @@ import { getMonthCanceledOrdersAmount } from "@/api/get-month-canceled-orders-am
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { DollarSign } from "lucide-react";
+import { MetricCardSkeleton } from "./metric-card-skeleton";
 
 export function MonthCaneledOrdersAmountCard() {
   const { data: monthCanceledOrdersAmount } = useQuery({
@@ -16,7 +17,7 @@ export function MonthCaneledOrdersAmountCard() {
         <DollarSign className="text-muted-foreground h-4 w-4" />
       </CardHeader>
       <CardContent className="space-y-1">
-        {monthCanceledOrdersAmount && (
+        {monthCanceledOrdersAmount ? (
           <>
             <span className="text-2xl font-bold tracking-tight">
               {monthCanceledOrdersAmount.amount}
@@ -41,6 +42,8 @@ export function MonthCaneledOrdersAmountCard() {
               </>
             )}
           </>
+        ) : (
+          <MetricCardSkeleton />
         )}
       </CardContent>
     </Card>
