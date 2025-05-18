@@ -6,12 +6,13 @@ import { AppLayout } from "./page/_layouts/app";
 import { AuthLayout } from "./page/_layouts/auth";
 import { Orders } from "./page/app/orders/orders";
 import { NotFound } from "./page/404";
+import { Error } from "./page/error";
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <AppLayout />,
-    errorElement: <NotFound />,
+    errorElement: <Error />,
     children: [
       {path: '/', element: <Dashboard />},
       {path: '/pedidos', element: <Orders />}
@@ -25,5 +26,10 @@ export const router = createBrowserRouter([
       {path: '/sign-in', element: <SignIn />},
       {path: '/sign-up', element: <SignUp />},
     ],
+  },
+
+  {
+    path: '*',
+    errorElement: <NotFound />
   }
 ])
